@@ -155,8 +155,7 @@
                                 'class' => 'form-control' // CSS class
                             )
                         );
-                        ?>
-
+                    ?>
                     </div>
                 </div>
             </div>

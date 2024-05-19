@@ -4,7 +4,6 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class Customer_Fetch extends Model {
-
     protected $table = 'rise_customer';
     protected $primaryKey = 'id';
     protected $allowedFields = [
@@ -21,5 +20,4 @@ class Customer_Fetch extends Model {
         'status',
         'anyRemarks'
     ];
-    
 }

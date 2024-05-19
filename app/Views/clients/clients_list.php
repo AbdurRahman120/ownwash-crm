@@ -5,7 +5,8 @@
         border-collapse: collapse;
     }
 
-    #client-table th, #client-table td {
+    #client-table th,
+    #client-table td {
         padding: 8px;
         border: 1px solid #ddd;
     }
@@ -24,7 +25,7 @@
     }
 </style>
 <div class="card">
-<div class="table-responsive">
+    <div class="table-responsive">
         <table id="client-table" class="display" cellspacing="0" width="100%">
             <thead>
                 <tr>
@@ -49,7 +50,7 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         // Fetch data using AJAX
         $.ajax({
             url: '<?php echo site_url("customerfetch/list_data") ?>',

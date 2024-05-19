@@ -25,8 +25,8 @@ class Franchise extends Controller
             return redirect()->back()->withInput()->with('errors', $validation->getErrors());
         } else {
             $franchiseModel = new Rise_franchise_model();
-            $franchiseModel->save_franchise($this->request->getPost()); // Use save_franchise method
-            return redirect()->to('/projects/index')->with('success', 'Franchise saved successfully');
+            $franchiseModel->save_franchise($this->request->getPost()); 
+            return redirect()->to('/team_members/index')->with('success', 'Franchise saved successfully');
         }
     }
 }

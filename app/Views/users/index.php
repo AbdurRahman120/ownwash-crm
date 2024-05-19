@@ -1,3 +1,7 @@
+<style>.nav-tabs.title li a {
+    padding: 20px 15px;
+    display: none;
+}</style>
 <div id="page-content" class="page-wrapper clearfix">
     <div class="clearfix grid-button">
         <ul id="client-tabs" data-bs-toggle="ajax-tab" class="nav nav-tabs bg-white title" role="tablist">
@@ -17,11 +21,6 @@
             </div>
         </ul>
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade" id="overview">
-                <?php echo view("clients/overview/index"); ?>
-            </div>
-
-            <div role="tabpanel" class="tab-pane fade" id="clients_list"></div>
             <div role="tabpanel" class="tab-pane fade" id="contacts"></div>
         </div>
     </div>

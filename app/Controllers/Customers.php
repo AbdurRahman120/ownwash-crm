@@ -19,7 +19,7 @@ class Customers extends Controller
         } else {
             $customerModel = new Customer_model();
             $customerModel->save_customer($this->request->getPost());
-            return redirect()->to('/clients/index')->with('success', 'Customer saved successfully');
+            return redirect()->to('/customers/index')->with('success', 'Customer saved successfully');
         }
     }
 }

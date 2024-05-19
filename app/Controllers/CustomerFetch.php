@@ -9,7 +9,7 @@ class CustomerFetch extends Controller
 {
     public function index()
     {
-        return view('/clients/index');
+        return view('/customers/index');
     }
     public function list_data()
     {
